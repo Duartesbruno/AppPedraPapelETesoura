@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteModern">#F4F4F4</color>
+    <color name="grayModern">#757575</color>
+
+    <!-- Light Theme -->
+    <color name="colorPrimary">#548B71</color>
+    <color name="colorSecondary">#2CAE8C</color>
+    <color name="grayHint">#a1a1a1</color>
+
+    <!-- Dark Theme -->
+    <color name="blackModern">#242424</color>
+
+</resources>

@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PedraPapelETesoura" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.PedraPapelETesoura" parent="Base.Theme.PedraPapelETesoura" />
+
+    <style name="BACKGROUND">
+        <item name="android:background">@color/blackModern</item>
+    </style>
+
+    <style name="TEXTCOLOR">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ACTIONBUTTONBACKGROUND">
+        <item name="android:background">@drawable/ripple_effect_raised2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="EDITTEXTBACKGROUND">
+        <item name="android:background">@drawable/edit_text_background2</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+</resources>

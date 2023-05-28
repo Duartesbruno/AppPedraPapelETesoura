@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pedra, Papel e Tesoura</string>
+    <string name="btnHelp">Ajuda</string>
+    <string name="etUserName">Digite seu nome</string>
+    <string name="error_name">O campo esta em branco!</string>
+    <string name="btnEnter">Entrar</string>
+    <string name="tvInstructions">Instruções</string>
+    <string name="tvText1">No jogo Pedra, Papel, Tesoura, você deve escolher uma das opções a baixo (cada símbolo possui o seu significado):</string>
+    <string name="tvRock">Pedra</string>
+    <string name="tvPaper">Papel</string>
+    <string name="tvScissors">Tesoura</string>
+    <string name="tvText2">Ao clicar em uma das opções ela será comparada com a opção que o computador (CPU) fez.</string>
+    <string name="tvRules">Regras</string>
+    <string name="tvText3">1- Pedra ganha da Tesoura (a amassa e quebra); \n2- Tesoura ganha do Papel (o corta); \n3- Papel ganha da Pedra (a embrulha); \n4- Se houver o caso em que os participantes coincidam mostrando o mesmo símbolo, acontece um empate e se joga outra vez até desempatar.</string>
+    <string name="tvRound">Rodada</string>
+    <string name="tvResult">Escolha uma opção abaixo:</string>
+    <string name="tvDraw">Houve empate!</string>
+    <string name="tvLost">Você perdeu!</string>
+    <string name="tvWon">Você ganhou!</string>
+    <string name="tvScore">Pontuação:</string>
+    <string name="tvScoreDraw">Empate:</string>
+</resources>

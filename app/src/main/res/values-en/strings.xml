@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rock, paper and scissors</string>
+    <string name="btnHelp">Help</string>
+    <string name="etUserName">Type your name</string>
+    <string name="error_name">The field is blank!</string>
+    <string name="btnEnter">Enter</string>
+    <string name="tvInstructions">Instructions</string>
+    <string name="tvText1">In the game Rock, Paper, Scissors, you must choose one of the options below (each symbol has its meaning):</string>
+    <string name="tvRock">Rock</string>
+    <string name="tvPaper">Paper</string>
+    <string name="tvScissors">Scissors</string>
+    <string name="tvText2">When clicking on one of the options it will be compared with the option that the computer (CPU) made.</string>>
+    <string name="tvRules">Rules</string>
+    <string name="tvText3"> 1- Stone beats Scissors (the mass and breaks); \n2- Scissors wins over paper (the cut); \n3- 3- Paper wins Stone (the wrap); \n4- If there is a case in which the participants coincide showing the same symbol, there is a tie and the game is played again until the tie is broken.</string>
+    <string name="tvRound">Round</string>
+    <string name="tvResult">Choose an option below:</string>
+    <string name="tvDraw">There was a draw!</string>
+    <string name="tvLost">You lost!</string>
+    <string name="tvWon">You won!</string>
+    <string name="tvScore">Score:</string>
+    <string name="tvScoreDraw">Draw:</string>
+</resources>
