@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMainScreen"
+    style="@style/BACKGROUND"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/BACKGROUND"
     tools:context=".MainActivity"
     tools:ignore="UseSwitchCompatOrMaterialXml">
 
@@ -31,6 +32,7 @@
         android:gravity="center"
         android:hint="@string/etUserName"
         android:inputType="text"
+        android:maxLength="10"
         android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -44,13 +46,14 @@
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginBottom="152dp"
         android:text="@string/btnEnter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUserName"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.935" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAjuda"
@@ -65,10 +68,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/ivLogo"
         android:layout_width="300dp"
         android:layout_height="359dp"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="9dp"
         app:layout_constraintBottom_toTopOf="@+id/etUserName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

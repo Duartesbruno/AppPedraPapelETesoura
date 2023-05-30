@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clGameScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameActivity">
@@ -17,22 +18,22 @@
         app:layout_constraintHorizontal_bias="0.986"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
 
     <ImageView
-        android:id="@+id/imgResultadoCpu"
+        android:id="@+id/ivCpuResultImg"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginTop="236dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgOpcaoSelecionada"
+        app:layout_constraintEnd_toStartOf="@+id/ivUserSelectImg"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/deafault" />
 
     <TextView
+        android:id="@+id/tvCpuText2"
         style="@style/TEXTCOLOR"
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CPU"
@@ -42,32 +43,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgResultadoCpu"
+        app:layout_constraintTop_toBottomOf="@+id/ivCpuResultImg"
         app:layout_constraintVertical_bias="0.024" />
 
     <TextView
+        android:id="@+id/tvUserName"
         style="@style/TEXTCOLOR"
-        android:id="@+id/etUserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Você"
+        android:layout_width="140dp"
+        android:layout_height="26dp"
+        android:text="User"
+        android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgOpcaoSelecionada"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserSelectImg"
         app:layout_constraintVertical_bias="0.024" />
 
     <ImageView
-        android:id="@+id/imgOpcaoSelecionada"
+        android:id="@+id/ivUserSelectImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="236dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgResultadoCpu"
+        app:layout_constraintStart_toEndOf="@+id/ivCpuResultImg"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/deafault" />
 
@@ -76,40 +78,40 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
-        android:onClick="selecionadoPapel"
+        android:onClick="selectedPaper"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/tvResultado"
-        app:srcCompat="@drawable/papelright" />
+        app:srcCompat="@drawable/paper_right" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
-        android:onClick="selecionadoTesoura"
+        android:onClick="selectedScissors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/tvResultado"
-        app:srcCompat="@drawable/tesouraright" />
+        app:srcCompat="@drawable/scissors_right" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
-        android:onClick="selecionadoPedra"
+        android:onClick="selectedRock"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResultado"
-        app:srcCompat="@drawable/pedraright" />
+        app:srcCompat="@drawable/rock_right" />
 
     <TextView
-        style="@style/TEXTCOLOR"
         android:id="@+id/tvResultado"
+        style="@style/TEXTCOLOR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="456dp"
@@ -122,8 +124,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvScore"
         style="@style/TEXTCOLOR"
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -135,11 +137,11 @@
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <TextView
+        android:id="@+id/tvCpuText"
         style="@style/TEXTCOLOR"
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -149,29 +151,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintTop_toBottomOf="@+id/tvScore"
+        app:layout_constraintVertical_bias="0.038" />
 
     <TextView
-        style="@style/TEXTCOLOR"
-        android:id="@+id/tvScoreUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.643"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txUserName2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        style="@style/TEXTCOLOR"
         android:id="@+id/tvScoreCpu"
+        style="@style/TEXTCOLOR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="84dp"
@@ -180,26 +167,42 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvCpuText"
         app:layout_constraintVertical_bias="0.002" />
 
     <TextView
+        android:id="@+id/tvUserName2"
         style="@style/TEXTCOLOR"
-        android:id="@+id/txUserName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Você"
+        android:text="User"
+        android:textAlignment="center"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toEndOf="@+id/tvCpuText"
+        app:layout_constraintTop_toBottomOf="@+id/tvScore"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/tvScoreUser"
+        style="@style/TEXTCOLOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName2"
+        app:layout_constraintVertical_bias="0.003" />
 
     <ImageView
         android:id="@+id/btnVoltar"
@@ -210,11 +213,11 @@
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_voltar" />
+        app:srcCompat="@drawable/back_icon" />
 
     <TextView
-        style="@style/TEXTCOLOR"
         android:id="@+id/tvRound"
+        style="@style/TEXTCOLOR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tvRound"
@@ -228,8 +231,8 @@
         app:layout_constraintVertical_bias="0.932" />
 
     <TextView
-        style="@style/TEXTCOLOR"
         android:id="@+id/tvRoundNumber"
+        style="@style/TEXTCOLOR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
