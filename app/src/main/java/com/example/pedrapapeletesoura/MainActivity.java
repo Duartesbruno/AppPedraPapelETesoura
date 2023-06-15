@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText userName;
     Button enterButton, helpButton;
-
     ImageView logo;
     Switch modeDarkSwitch;
     ConstraintLayout mainScreen;
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if(preferences.getString("darkMode", null).equals("activated")) {
+        if(preferences.getString("darkMode", "disabled").equals("activated")) {
             modeDarkSwitch.setChecked(true);
         } else {
             modeDarkSwitch.setChecked(false);
