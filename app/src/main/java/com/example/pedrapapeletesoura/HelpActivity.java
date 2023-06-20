@@ -52,7 +52,7 @@ public class HelpActivity extends AppCompatActivity {
             }
         });
 
-        if(preferences.getString("darkMode", null).equals("activated")) {
+        if(preferences.getString("darkMode", "disabled").equals("activated")) {
             modeDarkSwitch.setChecked(true);
         } else {
             modeDarkSwitch.setChecked(false);
