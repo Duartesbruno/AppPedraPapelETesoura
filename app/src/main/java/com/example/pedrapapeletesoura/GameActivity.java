@@ -61,7 +61,7 @@ public class GameActivity extends AppCompatActivity {
             }
         });
 
-        if(preferences.getString("darkMode", null).equals("activated")) {
+        if(preferences.getString("darkMode", "disabled").equals("activated")) {
             modeDarkSwitch.setChecked(true);
         } else {
             modeDarkSwitch.setChecked(false);
@@ -185,15 +185,15 @@ public class GameActivity extends AppCompatActivity {
 
         }
 
-        if ((cpuOption == "rock" && selectedOption == "scissors") ||
-                (cpuOption == "paper" && selectedOption == "rock") ||
-                (cpuOption == "scissors" && selectedOption == "paper")) {
+        if ((cpuOption.equals("rock") && selectedOption.equals("scissors")) ||
+                (cpuOption.equals("paper") && selectedOption.equals("rock")) ||
+                (cpuOption.equals("scissors") && selectedOption.equals("paper"))) {
             tvResultado.setText(getResources().getString(R.string.tvLost));
             countCpuScore++;
             tvScoreCpu.setText(String.valueOf(countCpuScore));
-        }else if ((selectedOption == "rock" && cpuOption == "scissors") ||
-                (selectedOption == "paper" && cpuOption == "rock") ||
-                (selectedOption == "scissors" && cpuOption == "paper") ) {
+        }else if ((selectedOption.equals("rock") && cpuOption.equals("scissors")) ||
+                (selectedOption.equals("paper") && cpuOption.equals("rock")) ||
+                (selectedOption.equals("scissors") && cpuOption.equals("paper")) ) {
             tvResultado.setText(getResources().getString(R.string.tvWon));
             countUserScore++;
             tvScoreUser.setText(String.valueOf(countUserScore));
